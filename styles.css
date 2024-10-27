@@ -1,0 +1,407 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+p {
+    box-shadow: 0 8px 20px #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* Header Styling */
+header {
+    background-color: #e6e6e6;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.hero-text h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.search-box input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #555;
+}
+
+/* Sneakers Section */
+.sneakers, .new-arrivals, .top-sneakers {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+/* Title styling */
+.sneakers h3, .new-arrivals h3, .top-sneakers h3 {
+    font-size: 32px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.view-all {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.view-all a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.view-all a:hover {
+    background-color: #555;
+}
+
+/* Grid styling */
+.sneaker-grid, .arrival-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Individual sneaker item */
+.sneaker-item, .arrival-item {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.sneaker-item img, .arrival-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.sneaker-item:hover, .arrival-item:hover {
+    transform: scale(1.05);
+}
+
+/* Sneaker name and price styling */
+.sneaker-item p, .arrival-item p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.sneaker-item .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Categories section */
+.categories {
+    float: left;
+    width: 15%;
+    padding: 20px;
+}
+
+.categories h4 {
+    font-size: 24px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+
+.categories ul li.active {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 150px;
+    width: auto;
+    padding: 50px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.footer-left {
+    flex-grow: 2; 
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.footer-left a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Apparel Section */
+.apparel {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.apparel h3 {
+    font-size: 32px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.apparel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.apparel-item {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.apparel-item img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.apparel-item:hover {
+    transform: scale(1.05);
+}
+
+.apparel-item p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Shared grid layout for sneakers and apparel (3x3 layout) */
+.sneaker-grid, .apparel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Common styling for sneaker and apparel items */
+.sneaker-item, .apparel-item {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .categories {
+        width: 100%;
+        float: none;
+    }
+
+    .sneaker-grid, .arrival-grid, .apparel-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .hero-text {
+        font-size: 24px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .search-box input {
+        width: 100px;
+    }
+
+    .sneaker-grid, .arrival-grid, .apparel-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+
+    .footer div h3 {
+        font-size: 18px;
+    }
+}
